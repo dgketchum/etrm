@@ -20,14 +20,13 @@ from datetime import datetime
 from pprint import pprint, pformat
 
 from numpy import zeros, isnan, count_nonzero, where, median, minimum, maximum, ones, nonzero, argwhere
-from osgeo import ogr
 from pandas import DataFrame, date_range, MultiIndex
 
 from app.paths import paths
-from recharge import STATIC_KEYS, OUTPUTS, INITIAL_KEYS, TRACKER_KEYS
-from recharge.raster import Raster
+from etrm import STATIC_KEYS, OUTPUTS, INITIAL_KEYS, TRACKER_KEYS
+from etrm.raster import Raster
 import csv
-from recharge.raster_tools import apply_mask, convert_raster_to_array
+from etrm.raster_tools import apply_mask, convert_raster_to_array
 
 """
 kc_min is from ASCE pg 199 (0.1 to 0.15 given range, but say to use 0 or nearly 0 for natural settings)

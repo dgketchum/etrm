@@ -18,7 +18,7 @@
 # ============= standard library imports ========================
 from numpy import where
 
-from recharge.raster import Raster
+from etrm.raster import Raster
 
 
 def generate_rew_tiff(sand_tif, clay_tif, output):

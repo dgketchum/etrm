@@ -23,11 +23,11 @@ pp = os.path.realpath(__file__)
 sys.path.append(os.path.dirname(os.path.dirname(pp)))
 
 from app.paths import paths
-from config import Config, check_config
-from recharge.dataset import generate_dataset
-from recharge.etrm_processes import Processes
-from recharge.preprocessing import generate_rew_tiff
-from recharge.raster_tools import make_results_dir
+from app.config import Config, check_config
+from etrm.dataset import generate_dataset
+from etrm.etrm_processes import Processes
+from etrm.preprocessing import generate_rew_tiff
+from etrm.raster_tools import make_results_dir
 
 CLI_ENABLED = False
 

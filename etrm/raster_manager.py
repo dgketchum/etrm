@@ -28,17 +28,15 @@ dgketchum 24 JUL 2016
 import os
 from calendar import monthrange
 
-import gdal
-import ogr
 from numpy import array, where, zeros, nonzero, mean, amax
 
 from app.paths import paths
-from recharge import OUTPUTS, ANNUAL_TRACKER_KEYS, DAILY_TRACKER_KEYS, MONTHLY_TRACKER_KEYS, \
+from etrm import OUTPUTS, ANNUAL_TRACKER_KEYS, DAILY_TRACKER_KEYS, MONTHLY_TRACKER_KEYS, \
     CURRENT_YEAR, CURRENT_MONTH, CURRENT_DAY
-from recharge.dict_setup import initialize_tabular_dict, initialize_raster_tracker
-from recharge.raster import Raster
-from recharge.raster_tools import get_raster_geo_attributes
-from recharge.raster_tools import make_results_dir, convert_array_to_raster
+from etrm.dict_setup import initialize_tabular_dict, initialize_raster_tracker
+from etrm.raster import Raster
+from etrm.raster_tools import get_raster_geo_attributes
+from etrm.raster_tools import make_results_dir, convert_array_to_raster
 
 
 class RasterManager(object):

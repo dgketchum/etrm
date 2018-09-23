@@ -27,8 +27,8 @@ import numpy as np
 # from numpy import where, isnan
 
 from app.paths import paths
-from recharge import NUMS, PRISM_YEARS
-from recharge.raster import Raster
+from etrm import NUMS, PRISM_YEARS
+from etrm.raster import Raster
 
 
 def post_process_ndvi(name, in_path, previous_kcb, band=1, scalar=1.25):

@@ -27,7 +27,6 @@ from affine import Affine
 import numpy as np
 from numpy import array, asarray
 from numpy.ma import masked_where, nomask
-from osgeo import gdal
 from pandas import DataFrame
 
 from app.paths import paths

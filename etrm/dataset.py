@@ -22,12 +22,12 @@ import os
 from affine import Affine
 
 from app.paths import paths, PathsNotSetExecption
-from recharge.dynamic_raster_finder import get_prisms, get_geo, get_individ_ndvi, get_penman, get_prism
-from recharge.raster import Raster
-from recharge.raster_tools import get_tiff_transform_func, get_tiff_transform
-from recharge.tools import day_generator
-from recharge.dict_setup import make_pairs, tiff_list
-from recharge import STATIC_KEYS, INITIAL_KEYS
+from etrm.dynamic_raster_finder import get_prisms, get_geo, get_individ_ndvi, get_penman, get_prism
+from etrm.raster import Raster
+from etrm.raster_tools import get_tiff_transform_func, get_tiff_transform
+from etrm.tools import day_generator
+from etrm.dict_setup import make_pairs, tiff_list
+from etrm import STATIC_KEYS, INITIAL_KEYS
 
 
 def generate_dataset(daterange, out):

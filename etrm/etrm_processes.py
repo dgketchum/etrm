@@ -21,27 +21,24 @@ import numpy
 import psutil
 import csv
 import pandas
-import gdal
-import ogr
-import osgeo
 from subprocess import call
 from numpy import maximum, minimum, where, isnan, exp, median, full
 
 from numpy import maximum, minimum, where, isnan, exp, median, nonzero, random, log, zeros_like
 
 from app.paths import paths, PathsNotSetExecption
-from recharge import MM
-from recharge.dict_setup import initialize_master_dict, initialize_static_dict, initialize_initial_conditions_dict, \
+from etrm import MM
+from etrm.dict_setup import initialize_master_dict, initialize_static_dict, initialize_initial_conditions_dict, \
     set_constants, initialize_master_tracker
-from recharge.dynamic_raster_finder import get_penman, get_individ_kcb, get_kcb, get_prisms
-from recharge.raster_manager import RasterManager
-from recharge.tools import millimeter_to_acreft, unique_path, add_extension, time_it, day_generator
+from etrm.dynamic_raster_finder import get_penman, get_individ_kcb, get_kcb, get_prisms
+from etrm.raster_manager import RasterManager
+from etrm.tools import millimeter_to_acreft, unique_path, add_extension, time_it, day_generator
 from scipy.stats import norm
-from recharge.raster_tools import convert_raster_to_array
+from etrm.raster_tools import convert_raster_to_array
 
-from recharge.dict_setup import initialize_point_tracker
-from recharge.raster_tools import apply_mask, apply_mask_pixel_tracker
-from utils.tracker_plot import run_tracker_plot
+from etrm.dict_setup import initialize_point_tracker
+from etrm.raster_tools import apply_mask, apply_mask_pixel_tracker
+# from utils.tracker_plot import run_tracker_plot
 
 
 class NotConfiguredError(BaseException):

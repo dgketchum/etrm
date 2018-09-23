@@ -17,7 +17,6 @@
 import os
 import time
 
-import gdal
 from datetime import datetime
 from dateutil import rrule
 from numpy import linspace, isnan
