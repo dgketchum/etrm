@@ -24,7 +24,7 @@ from datetime import datetime
 import yaml
 
 from app.paths import paths
-from recharge import STATIC_KEYS, INITIAL_KEYS
+from etrm import STATIC_KEYS, INITIAL_KEYS
 
 DEFAULT_CFG = '''
 ---
