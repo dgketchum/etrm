@@ -45,7 +45,7 @@ setup(name='etrm',
       download_url='https://github.com/{}/{}/archive/dgk.zip'.format('nmthydro', 'recharge', tag),
       url='https://github.com/nmthydro/Recharge/tree/dgk',
       test_suite='tests.test_suite.suite',
-      install_requires=['numpy', 'pandas', 'requests', 'future', 'xarray', 'pyproj', 'gdal', 'xlrd',
+      install_requires=['numpy', 'pandas', 'requests', 'future', 'xarray', 'pyproj', 'xlrd',
                         'netcdf4'],
       )
 
